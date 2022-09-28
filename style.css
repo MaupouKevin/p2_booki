@@ -1,0 +1,150 @@
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.logo-container {
+    margin: 0%;
+    
+}
+
+#logo {
+    margin-top: 0%;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0%;
+    
+}
+
+.nav>div {
+    padding: 25%;
+}
+
+.nav>div:hover {
+    border-top: 3px #0065FC solid;
+}
+
+#searchbar {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background-color: #F2F2F2;
+    border: 2px white solid;
+    border-radius: 10px;
+}
+#searchbar>i {
+    padding: 10px;
+    
+}
+input[type=search] {
+    padding:10px 20px;
+    border: #F2F2F2;
+}
+input[type=submit] {
+    padding:10px 20px; 
+    background:#0065FC;
+    border: #F2F2F2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#hebergements {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border: 2px white solid;
+    border-radius: 30px;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+#hebergements-title {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    width: 100%;
+    height: fit-content;
+}
+.logements {
+
+    width: 30%;
+    height: 25%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+}
+#populaires {
+    width: 30%;
+    background-color: #F2F2F2;
+    border: 2px white solid;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.populaires {
+    display: flex;
+    width: 500px;
+    height: 310px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.images {
+   width: max-content;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.images-populaires {
+    width: max-content;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
