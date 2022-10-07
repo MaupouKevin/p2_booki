@@ -106,7 +106,7 @@ input[type=submit] {
 #filtres {
     display: flex;
     margin-top: 30px;
-    
+
 }
 
 .icons {
@@ -131,8 +131,8 @@ input[type=submit] {
 }
 
 .icons:hover>button {
-color: #0065FC ;
-background-color: #DEEBFF;
+    color: #0065FC;
+    background-color: #DEEBFF;
 }
 
 .icons:hover>i {
@@ -215,7 +215,7 @@ main {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    
+    box-shadow: 0px 5px 20px grey
 }
 
 .images-logements {
@@ -261,8 +261,10 @@ main {
 
 #afficher-plus {
     width: 100%;
+    margin-left: 10px;
     justify-content: flex-start;
 }
+
 span {
     font-weight: bold;
 }
@@ -283,13 +285,13 @@ span {
     display: flex;
     font-family: 'Raleway';
     width: 100%;
-   
+
 }
 
-
-.populaires > a {
+.populaires>a {
     width: 370px;
     height: 140px;
+    box-shadow: 0px 5px 20px grey;
     display: flex;
     background-color: white;
     padding: 5px;
@@ -300,8 +302,10 @@ span {
 
 .texte-populaires {
     width: 55%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 
 }
 
@@ -314,6 +318,7 @@ span {
 }
 
 .texte-populaires>p {
+    flex: 1;
     margin-top: 5px;
     margin-left: 15px;
     margin-bottom: 20px;
@@ -322,10 +327,12 @@ span {
 }
 
 .notation-etoile-populaires {
-    margin-top: 25px;
+    justify-self: flex-end;
+    align-self: flex-start;
     margin-left: 15px;
+    margin-bottom: 10px;
     color: #0065FC;
-    
+
 }
 
 .photos-populaires {
@@ -339,4 +346,124 @@ span {
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+#activites {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Raleway';
+}
+
+#activites>h2 {
+    display: block;
+    width: 100%;
+}
+
+.photos-activites {
+
+    width: 290px;
+    height: 450px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.photos-activites-mini {
+    width: 290px;
+    height: 185px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.images-activites {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.vieux-port {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 500px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px grey
+}
+
+#pomegues-frioul {
+    display: flex;
+    flex-direction: column;
+}
+
+.pomegues {
+
+    width: 290px;
+    height: 275px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px grey
+}
+
+.frioul {
+
+    width: 290px;
+    height: 195px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px grey
+}
+
+.calanques {
+
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 500px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px grey
+}
+
+#garde-longchamp {
+    display: flex;
+    flex-direction: column;
+}
+
+.garde {
+    width: 290px;
+    height: 235px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px grey
+}
+
+.longchamp {
+    width: 290px;
+    height: 235px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px grey
+}
+
+footer {
+    display: flex;
 }
