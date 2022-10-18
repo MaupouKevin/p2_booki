@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Booki</title>
+    <meta name="viewport" content="max-width=1440, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 991px)" href="css/style-resolution-tablette.css" />
+    <link rel="stylesheet" media="all and (max-width: 767px)" href="css/style-resolution-tel.css" />
     <script src="https://kit.fontawesome.com/acc4f2aed8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,12 +23,12 @@
                 <a href="#activites">Activités</a>
             </nav>
         </div>
-        <div id="main-title">
+        <div id="titre-principal">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein Centre ville ou en pleine nature</p>
         </div>
 
-        <div id="searchbar">
+        <div id="barre-recherche">
             <i class="fa-solid fa-location-dot"></i>
             <form method="post" action="traitement.php">
                 <input type="search" placeholder="Marseille, France" />
@@ -33,6 +36,7 @@
             </form>
         </div>
         <div id="filtres">
+            <p><span>Filtres</span></p>
 
             <div class="icons"><i class="fa-solid fa-money-bill-wave"></i><button>Économique</button></div>
 
@@ -55,7 +59,7 @@
 
     <main>
         <section id="hebergements">
-            <div id="hebergements-title">
+            <div id="hebergements-titre">
                 <h2>Hébergements à Marseille</h2>
             </div>
 
@@ -209,7 +213,7 @@
         </section>
 
         <section id="populaires">
-            <div class="populaires-title">
+            <div class="populaires-titre">
 
                 <h2>Les plus populaires</h2>
                 <div id="etoile-populaires"><i class="fa-solid fa-star"></i></div>
@@ -271,38 +275,39 @@
                 </a>
             </div>
         </section>
+    </main>
         <section id="activites">
             <h2>Activités à Marseille</h2>
-            <div class="vieux-port">
+            <div class="carte-activites-xl">
                 <div class="photos-activites"><img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux-port" class="images-activites"></div>
-                <h3>Vieux Port</h3>
+                <div class="titre-activites"><h3>Vieux Port</h3></div>
             </div>
-            <div id="pomegues-frioul">
-                <div class="pomegues">
+            <div class="bloc-activite">
+                <div class="carte-activites-l">
                     <div class="photos-activites"><img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="pomegues" class="images-activites"></div>
-                    <h3>Fort de Pomègues</h3>
+                    <div class="titre-activites"><h3>Fort de Pomègues</h3></div>
                 </div>
-                <div class="frioul">
+                <div class="carte-activites-s">
                     <div class="photos-activites"><img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="frioul" class="images-activites"></div>
-                    <h3>Îles du Frioul</h3>
+                    <div class="titre-activites"><h3>Îles du Frioul</h3></div>
                 </div>
             </div>
-            <div class="calanques">
+            <div class="carte-activites-xl">
                 <div class="photos-activites"><img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="calanques" class="images-activites"></div>
-                <h3>Parc National des Calanques</h3>
+                <div class="titre-activites"><h3>Parc National des Calanques</h3></div>
             </div>
-            <div id="garde-longchamp">
-                <div class="garde">
+            <div id="bloc-activite">
+                <div class="carte-activites-m">
                     <div class="photos-activites-mini"><img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre-dame" class="images-activites"></div>
-                    <h3>Notre-Dame-de-la-Garde</h3>
+                    <div class="titre-activites"><h3>Notre-Dame-de-la-Garde</h3></div>
                 </div>
-                <div class="longchamp">
+                <div class="carte-activites-m">
                     <div class="photos-activites-mini"><img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="longchamp" class="images-activites"></div>
-                    <h3>Parc Longchamp</h3>
+                    <div class="titre-activites"><h3>Parc Longchamp</h3></div>
                 </div>
             </div>
         </section>
-    </main>
+    
     <footer>
         <div id="a-propos">
             <h3>A propos</h3>

@@ -4,78 +4,72 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0%;
+}
+#head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+h1 {
     font-family: 'Raleway';
-    max-width: 1440px;
 }
 
-header,
-main,
-#activites,
-footer {
-    padding-left: 2%;
-    padding-right: 2%;
+p {
+    font-family: 'Raleway';
 }
 
 a {
     color: black;
     text-decoration: none;
     min-height: 19px;
+
 }
 
 a:link {
     color: black;
 }
 
-a:hover {
-    color: #0065FC;
-    cursor: pointer;
-}
-
 .nav {
+    width: 100%;
+    font-family: 'Raleway';
     display: flex;
-    height: 100px;
-    justify-content: flex-end;
-
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -3px;
 }
 
 .nav>a {
-    border-top: 3px white solid;
-    padding: 25%;
+    border-bottom: 3px #F2F2F2 solid;
+    width: 100%;
+    padding: 2%;
 }
 
 .nav>a:hover {
-    border-top: 3px #0065FC solid;
+    margin-top: -3px;
+    border-bottom: 3px #0065FC solid;
     color: #0065FC;
     cursor: pointer;
-
-}
-
-#head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo-container {
-    padding-top: 2%;
-    width: 100px;
-
+    margin: 0%;
+    width: fit-content;
 }
 
 #logo {
     margin-top: 0%;
     width: 100%;
-
 }
 
-#barre-recherche,
-form {
+#barre-recherche, form {
     display: flex;
     justify-content: flex-start;
     width: fit-content;
     height: fit-content;
-
 }
 
 #barre-recherche>i {
@@ -89,6 +83,7 @@ form {
 input[type=search] {
     padding: 12px 20px;
     border: 1px #F2F2F2 solid;
+    font-family: 'Raleway';
     font-weight: bold;
     font-size: 15px;
 }
@@ -99,6 +94,7 @@ input[type=submit] {
     border: 1px #0065FC solid;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-family: 'Raleway';
     font-size: 15px;
     font-weight: bold;
     color: #F2F2F2;
@@ -107,14 +103,15 @@ input[type=submit] {
 
 #filtres {
     display: flex;
+    flex-direction: column;
     margin-top: 30px;
     width: max-content;
 
 }
 
 .icons {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 15px;
+    margin-right: 40px;
     display: flex;
     width: fit-content;
     height: 34px;
@@ -163,9 +160,10 @@ input[type=submit] {
     font-weight: bold;
 }
 
-
 #icon-info {
     display: flex;
+    font-family: 'Raleway';
+    margin: 20px;
 }
 
 #icon-info>i {
@@ -182,26 +180,21 @@ input[type=submit] {
 
 main {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
 }
 
-#hebergements,
-.logements,
-#populaires,
-.populaires>a {
+.logements, .populaires>a {
     border-radius: 20px;
 }
 
 #hebergements {
-    width: 60%;
+    width: 100%;
     height: max-content;
     display: flex;
-    flex-wrap: wrap;
-    background-color: #F2F2F2;
-    border: 2px white solid;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 15px;
-    margin: 10px;
+    align-items: space-between;
 }
 
 #hebergements-titre {
@@ -210,11 +203,12 @@ main {
     margin-left: 25px;
     width: 100%;
     height: fit-content;
+    font-family: 'Raleway';
 }
 
 .logements {
-    width: 235px;
-    height: 200px;
+    width: 95%;
+    height: 300px;
     background-color: white;
     padding: 3px;
     margin: 10px;
@@ -224,8 +218,8 @@ main {
 }
 
 .images-logements {
-    width: 235px;
-    height: 110px;
+    width: 100%;
+    height: 190px;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -239,14 +233,10 @@ main {
 
 .body-logements {
     width: 100%;
-    height: 85px;
+    height: 105px;
 }
 
-.body-logements>h3,
-.body-logements>p,
-.notation-etoile,
-#afficher-plus,
-.titre-activites {
+.body-logements>h3, .body-logements>p, .notation-etoile, #afficher-plus, .titre-activites {
     margin-left: 10px;
 }
 
@@ -254,12 +244,14 @@ main {
     margin-top: 10px;
     margin-bottom: 2px;
     font-size: medium;
+    font-family: 'Raleway';
 }
 
 .body-logements>p {
     margin-top: 5px;
     margin-bottom: 15px;
     font-size: small;
+    font-family: 'Raleway';
 }
 
 .notation-etoile {
@@ -275,18 +267,15 @@ main {
 }
 
 span {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #populaires {
-    width: fit-content;
+    width: 100%;
     height: max-content;
     background-color: #F2F2F2;
-    border: 2px white solid;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin: 10px;
     justify-content: space-between;
     align-content: space-between;
 }
@@ -294,6 +283,7 @@ span {
 .populaires-titre {
     display: flex;
     justify-content: space-between;
+    font-family: 'Raleway';
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 25px;
@@ -304,11 +294,11 @@ span {
 #etoile-populaires {
     display: flex;
     align-items: center;
-    margin-right: 25px;
+    padding-right: 30px;
 }
 
 .populaires>a {
-    width: 90%;
+    width: 95%;
     height: 140px;
     box-shadow: 0px 5px 20px grey;
     display: flex;
@@ -333,6 +323,7 @@ span {
     margin-left: 15px;
     margin-bottom: 2px;
     font-size: medium;
+    font-family: 'Raleway';
 }
 
 .texte-populaires>p {
@@ -341,6 +332,7 @@ span {
     margin-left: 15px;
     margin-bottom: 20px;
     font-size: small;
+    font-family: 'Raleway';
 }
 
 .notation-etoile-populaires {
@@ -368,9 +360,11 @@ span {
 #activites {
     width: 100%;
     height: fit-content;
+    justify-content: center;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Raleway';
 }
 
 #activites>h2 {
@@ -380,8 +374,7 @@ span {
 
 .photos-activites {
 
-    width: 300px;
-    height: 450px;
+    width: 100%;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -389,8 +382,8 @@ span {
 }
 
 .photos-activites-mini {
-    width: 300px;
-    height: 185px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -403,50 +396,43 @@ span {
 
 }
 
-.carte-activites-s,
-.carte-activites-m,
-.carte-activites-l,
-.carte-activites-xl {
+.carte-activites-s, .carte-activites-m, .carte-activites-l, .carte-activites-xl {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 300px;
+    width: 550px;
     margin: 15px;
     border-radius: 20px;
     box-shadow: 0px 5px 20px grey
 }
 
 .carte-activites-xl {
-    height: 505px;
+    height: 300px;
 }
 
 .bloc-activites {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: fit-content;
 }
 
-.carte-activites-l {
+.carte-activites-l { 
     height: 300px;
 }
 
 .carte-activites-s {
-    height: 190px;
+    height: 300px;
 }
 
 .carte-activites-m {
-    height: 245px;
+    height: 300px;
 }
 
 footer {
     display: flex;
-    flex: auto;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     background-color: #F2F2F2;
-    padding-left: 3%;
-    padding-right: 25%;
-
 }
 
 li {
