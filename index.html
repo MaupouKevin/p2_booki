@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Booki</title>
-    <meta name="viewport" content="max-width=1440, initial-scale=1">
+    <meta name="viewport" content="device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 991px)" href="css/style-resolution-tablette.css" />
+    <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 991px)"
+        href="css/style-resolution-tablette.css" />
     <link rel="stylesheet" media="all and (max-width: 767px)" href="css/style-resolution-tel.css" />
     <script src="https://kit.fontawesome.com/acc4f2aed8.js" crossorigin="anonymous"></script>
 </head>
@@ -19,8 +20,8 @@
                 <img src="images/logo/Booki.png" alt="logo" id="logo">
             </div>
             <nav class="nav">
-                <a href="#hebergements">Hébergements</a>
-                <a href="#activites">Activités</a>
+                <div class="nav-hebergements"><a href="#hebergements">Hébergements</a></div>
+                <div class="nav-activites"><a href="#activites">Activités</a></div>
             </nav>
         </div>
         <div id="titre-principal">
@@ -33,6 +34,7 @@
             <form method="post" action="traitement.php">
                 <input type="search" placeholder="Marseille, France" />
                 <input type="submit" value="Rechercher" />
+                <div class="bouton-recherche"><i class="fa-solid fa-magnifying-glass"><input type="submit"></i></div>
             </form>
         </div>
         <div id="filtres">
@@ -67,7 +69,8 @@
                 <a href="#">
 
                     <div class="images-logements">
-                        <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="cannebiere" class="images"></br>
+                        <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="cannebiere"
+                            class="images"></br>
 
                     </div>
 
@@ -91,7 +94,8 @@
                 <a href="#">
 
                     <div class="images-logements">
-                        <img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel-du-port" class="images"></br>
+                        <img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel-du-port"
+                            class="images"></br>
 
                     </div>
 
@@ -116,7 +120,8 @@
                 <a href="#">
 
                     <div class="images-logements">
-                        <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="les-mouettes" class="images"></br>
+                        <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="les-mouettes"
+                            class="images"></br>
 
                     </div>
 
@@ -165,7 +170,8 @@
                 <a href="#">
 
                     <div class="images-logements">
-                        <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="le-panier" class="images"></br>
+                        <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="le-panier"
+                            class="images"></br>
                     </div>
 
                     <div class="body-logements">
@@ -188,7 +194,8 @@
                 <a href="#">
 
                     <div class="images-logements">
-                        <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chez-amina" class="images"></br>
+                        <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chez-amina"
+                            class="images"></br>
                     </div>
 
                     <div class="body-logements">
@@ -220,8 +227,9 @@
             </div>
             <div class="populaires" id="soleil-du-matin">
                 <a href="#">
-                    <div class="photos-populaires"><img src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                            alt="soleil du matin" class="images-populaires">
+                    <div class="photos-populaires"><img
+                            src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="soleil du matin"
+                            class="images-populaires">
                     </div>
                     <div class="texte-populaires">
                         <h3>Hôtel Le soleil du matin</h3>
@@ -259,8 +267,9 @@
             </div>
             <div class="populaires" id="bleu-blanc">
                 <a href="#">
-                    <div class="photos-populaires"><img src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                            alt="bleu-blanc" class="images-populaires">
+                    <div class="photos-populaires"><img
+                            src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="bleu-blanc"
+                            class="images-populaires">
                     </div>
                     <div class="texte-populaires">
                         <h3>Hôtel Tout Bleu et Blanc</h3>
@@ -276,38 +285,56 @@
             </div>
         </section>
     </main>
-        <section id="activites">
-            <h2>Activités à Marseille</h2>
-            <div class="carte-activites-xl">
-                <div class="photos-activites"><img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux-port" class="images-activites"></div>
-                <div class="titre-activites"><h3>Vieux Port</h3></div>
+    <section id="activites">
+        <h2>Activités à Marseille</h2>
+        <div class="carte-activites-xl">
+            <div class="photos-activites"><img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    alt="vieux-port" class="images-activites"></div>
+            <div class="titre-activites">
+                <h3>Vieux Port</h3>
             </div>
-            <div class="bloc-activite">
-                <div class="carte-activites-l">
-                    <div class="photos-activites"><img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="pomegues" class="images-activites"></div>
-                    <div class="titre-activites"><h3>Fort de Pomègues</h3></div>
-                </div>
-                <div class="carte-activites-s">
-                    <div class="photos-activites"><img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="frioul" class="images-activites"></div>
-                    <div class="titre-activites"><h3>Îles du Frioul</h3></div>
-                </div>
-            </div>
-            <div class="carte-activites-xl">
-                <div class="photos-activites"><img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="calanques" class="images-activites"></div>
-                <div class="titre-activites"><h3>Parc National des Calanques</h3></div>
-            </div>
-            <div id="bloc-activite">
-                <div class="carte-activites-m">
-                    <div class="photos-activites-mini"><img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre-dame" class="images-activites"></div>
-                    <div class="titre-activites"><h3>Notre-Dame-de-la-Garde</h3></div>
-                </div>
-                <div class="carte-activites-m">
-                    <div class="photos-activites-mini"><img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="longchamp" class="images-activites"></div>
-                    <div class="titre-activites"><h3>Parc Longchamp</h3></div>
+        </div>
+        <div class="bloc-activite">
+            <div class="carte-activites-l">
+                <div class="photos-activites"><img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        alt="pomegues" class="images-activites"></div>
+                <div class="titre-activites">
+                    <h3>Fort de Pomègues</h3>
                 </div>
             </div>
-        </section>
-    
+            <div class="carte-activites-s">
+                <div class="photos-activites"><img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                        alt="frioul" class="images-activites"></div>
+                <div class="titre-activites">
+                    <h3>Îles du Frioul</h3>
+                </div>
+            </div>
+        </div>
+        <div class="carte-activites-xl">
+            <div class="photos-activites"><img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                    alt="calanques" class="images-activites"></div>
+            <div class="titre-activites">
+                <h3>Parc National des Calanques</h3>
+            </div>
+        </div>
+        <div class="bloc-activite">
+            <div class="carte-activites-m">
+                <div class="photos-activites-mini"><img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                        alt="notre-dame" class="images-activites"></div>
+                <div class="titre-activites">
+                    <h3>Notre-Dame-de-la-Garde</h3>
+                </div>
+            </div>
+            <div class="carte-activites-m">
+                <div class="photos-activites-mini"><img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                        alt="longchamp" class="images-activites"></div>
+                <div class="titre-activites">
+                    <h3>Parc Longchamp</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div id="a-propos">
             <h3>A propos</h3>
