@@ -1,6 +1,6 @@
-
 body {
     margin: 0px;
+    padding: 0px;
     font-family: 'Raleway';
 }
 
@@ -14,8 +14,15 @@ main,
 header {
     margin: 0px 10px 0px 10px;
 }
-h1, h2, h3 {
-    font-weight: 999 ;
+
+h1 {
+    font-weight: 700;
+    font-size: x-large;
+}
+
+h2,
+h3 {
+    font-weight: 600;
 }
 
 a {
@@ -40,17 +47,21 @@ a:hover {
 
 }
 
-.nav-hebergements, .nav-activites {
+.nav-hebergements,
+.nav-activites {
     border-top: 3px white solid;
-    padding: 25%;
+
 }
 
-.nav-hebergements>a, .nav-activites>a {
-display: flex;
-justify-content: center;
+.nav-hebergements>a,
+.nav-activites>a {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
 }
 
-.nav-hebergements:hover, .nav-activites:hover {
+.nav-hebergements:hover,
+.nav-activites:hover {
     border-top: 3px #0065FC solid;
     color: #0065FC;
     cursor: pointer;
@@ -136,7 +147,7 @@ input[type=submit] {
     margin-right: 20px;
     display: flex;
     width: fit-content;
-    height: 34px;
+    height: 35px;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -173,28 +184,28 @@ input[type=submit] {
 #icon-info>i {
     width: 25px;
     height: 25px;
-    margin-right: 5px;
+    align-self: center;
+    margin: 1px 5px 5px 0px;
     background-color: #0065FC;
     color: white;
-    font-size: 25px;
-    align-self: center;
+    font-size: 26px;
     border: 2px #F2F2F2 solid;
     border-radius: 50%;
 }
 
-.icons:hover, .icons:active ,.icons:focus {
+.icons:hover {
     background-color: #DEEBFF;
     cursor: pointer;
 
 }
 
-.icons:hover>button, .icons:active>button ,.icons:focus>button {
+.icons:hover>button {
     color: #0065FC;
     background-color: #DEEBFF;
     cursor: pointer;
 }
 
-.icons:hover>i, .icons:active>i ,.icons:focus>i {
+.icons:hover>i {
     border: 2px black solid;
     cursor: pointer;
 }
@@ -385,11 +396,11 @@ span {
     justify-content: space-around;
     height: fit-content;
     margin: 30px 0px 30px 0px;
-   
+
 }
 
 #activites>h2 {
-    margin-left: 15px;
+    margin: 15px;
     width: 100%;
 }
 
@@ -458,14 +469,17 @@ footer {
     padding: 0px 50px 0px 50px;
 }
 
-#a-propos, #nos-hebergements, #assistance {
+#a-propos,
+#nos-hebergements,
+#assistance {
     margin: 20px 250px 20px 0px;
 }
 
 ul {
     padding: 0px;
-    
+
 }
+
 li {
     list-style-type: none;
     margin-bottom: 8px;
