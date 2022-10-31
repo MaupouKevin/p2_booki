@@ -3,16 +3,25 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
 }
 header {
     margin: 0px;
     padding: 0px
 }
-#titre-principal, #barre-recherche, #filtres {
-    margin-left: 10px;
-    margin-right: 10px;
+#titre-principal, #barre-recherche, #filtres, #icon-info {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: large;
+    margin-top: 30px;
+}
+
+h2,h3 {
+font-size: medium;
 }
 
 main,
@@ -67,6 +76,7 @@ h2 {
 
 input[type=search] {
     border-right: none;
+    font-size: 14px;
 }
 
 input[type=submit] {
@@ -101,9 +111,6 @@ input[type=submit] {
     margin: 15px 40px 0px 0px;
 }
 
-#icon-info {
-    margin: 10px;
-}
 
 main {
     flex-direction: column-reverse;
@@ -119,7 +126,7 @@ main {
     padding: 15px 0px 5px 0px;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px -5px 0px 5px;
+    margin: 10px 0px 0px 5px;
 }
 
 #hebergements-titre {
@@ -166,6 +173,7 @@ span {
     height: fit-content;
     align-items: center;
     margin-top: 0px;
+    padding-bottom: 30px;
 }
 
 .photos-activites,.photos-activites-mini {

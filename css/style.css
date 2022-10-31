@@ -22,11 +22,12 @@ header {
 
 h1 {
     font-weight: 700;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 h2,
 h3 {
+    font-size: x-large;
     font-weight: 600;
 }
 
@@ -117,7 +118,7 @@ input[type=search] {
     padding: 12px 20px;
     border: 1px #F2F2F2 solid;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 input[type=submit] {
@@ -126,7 +127,7 @@ input[type=submit] {
     border: 1px #0065FC solid;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: #F2F2F2;
     cursor: pointer;
@@ -138,13 +139,14 @@ input[type=submit] {
 
 #filtres {
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
     width: max-content;
+    align-items: center;
 
 }
 
 #titre-filtres {
-    font-size: 0.8em;
+    font-size: 1.0em;
 }
 
 .icons {
@@ -286,13 +288,13 @@ main {
 .body-logements>h3 {
     margin-top: 10px;
     margin-bottom: 2px;
-    font-size: medium;
+    font-size: 16px;
 }
 
 .body-logements>p {
     margin-top: 5px;
     margin-bottom: 15px;
-    font-size: small;
+    font-size: medium;
 }
 
 .notation-etoile {
@@ -304,7 +306,6 @@ main {
     width: 100%;
     justify-content: flex-start;
     margin-top: 8px;
-    margin-bottom: 10px;
 }
 
 span {
@@ -362,7 +363,7 @@ span {
     margin-top: 5px;
     margin-left: 15px;
     margin-bottom: 2px;
-    font-size: medium;
+    font-size: 16px;
 }
 
 .texte-populaires>p {
@@ -370,12 +371,10 @@ span {
     margin-top: 5px;
     margin-left: 15px;
     margin-bottom: 20px;
-    font-size: small;
+    font-size: medium;
 }
 
 .notation-etoile-populaires {
-    justify-self: flex-end;
-    align-self: flex-start;
     margin-left: 15px;
     margin-bottom: 10px;
     color: #0065FC;
