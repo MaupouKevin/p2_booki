@@ -1,12 +1,10 @@
-
-body {    
+body {
     display: flex;
     flex-direction: column;
     margin: 0px;
     padding: 0px;
     font-family: 'Raleway';
     max-width: 1440px;
-    justify-content: center;
 }
 
 header,
@@ -41,11 +39,6 @@ a:link {
     color: black;
 }
 
-a:hover {
-    color: #0065FC;
-    cursor: pointer;
-}
-
 .nav {
     display: flex;
     height: 100px;
@@ -74,6 +67,11 @@ a:hover {
 
 }
 
+a:hover {
+    color: #0065FC;
+    cursor: pointer;
+}
+
 #head {
     display: flex;
     justify-content: space-between;
@@ -99,10 +97,6 @@ form {
     width: fit-content;
     height: fit-content;
 
-}
-
-form>i {
-    display: none;
 }
 
 #barre-recherche>i {
@@ -230,14 +224,13 @@ main {
 }
 
 #hebergements {
-    height: max-content;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
     border: 2px white solid;
     justify-content: space-between;
     padding: 15px 20px 15px 20px;
-    margin: 10px;
 }
 
 #hebergements-titre {
@@ -248,18 +241,18 @@ main {
 }
 
 .logements {
-    width: 235px;
+    width: 31%;
     height: 200px;
     background-color: white;
     padding: 3px;
-    margin: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 5px 8px grey
 }
 
 .images-logements {
-    width: 235px;
+    width: 100%;
     height: 110px;
     overflow: hidden;
     border-top-left-radius: 20px;
@@ -313,12 +306,11 @@ span {
 }
 
 #populaires {
-    width: 1000px;
+    width: 31%;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     padding: 15px 20px 15px 20px;
-    margin: 10px;
     justify-content: space-between;
     align-content: space-between;
 }
@@ -408,6 +400,14 @@ span {
     width: 100%;
 }
 
+#cartes-activites {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
 .photos-activites {
     height: 460px;
     overflow: hidden;
@@ -487,4 +487,73 @@ ul {
 li {
     list-style-type: none;
     margin-bottom: 8px;
+}
+
+@media all and (min-width: 993px) and (max-width: 1280px) {
+
+    header,
+    main,
+    #activites,
+    footer {
+        padding: 0px 25px 0px 25px;
+    }
+
+    #populaires,
+    #hebergements {
+        padding: 15px 10px
+    }
+
+    #hebergements {
+        width: 65%;
+    }
+
+    #populaires {
+        width: 31%;
+    }
+
+    .body-logements>h3,
+    .texte-populaires>h3 {
+        font-size: 14px;
+    }
+
+    .body-logements>p,
+    .texte-populaires>p {
+        font-size: small;
+    }
+
+    .titre-activites {
+        height: 50px;
+    }
+
+    .titre-activites>h3 {
+        font-size: medium;
+    }
+
+    .carte-activites-s,
+    .carte-activites-m,
+    .carte-activites-l {
+        width: 100%;
+    }
+
+    .bloc-activite {
+        width: 24%;
+    }
+
+    .carte-activites-s {
+        height: 150px;
+    }
+    
+    .carte-activites-m {
+        height: 185px;
+    }
+
+    .carte-activites-l {
+        height: 220px;
+    }
+
+    .carte-activites-xl {
+        height: 400px;
+        width: 24%;
+    }
+    
 }
