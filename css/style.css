@@ -81,7 +81,6 @@ a:hover {
 #logo {
     margin-top: 0%;
     width: 100%;
-
 }
 
 #titre-principal>p {
@@ -90,8 +89,7 @@ a:hover {
 
 #barre-recherche {
     display: flex;
-    width: fit-content;
-    border: 2px #F2F2F2 solid;
+    width: 30%;
 }
 
 #barre-recherche>i {
@@ -104,6 +102,7 @@ a:hover {
 
 input[type=search] {
     width: 100%;
+    height: 50px;
     padding: 12px 20px;
     border: 1px #F2F2F2 solid;
     font-weight: bold;
@@ -111,6 +110,7 @@ input[type=search] {
 }
 
 .bouton-recherche {
+    height: 50px;
     padding: 10px 15px;
     background: #0065FC;
     border: 1px #0065FC solid;
@@ -120,6 +120,8 @@ input[type=search] {
     font-weight: bold;
     color: #F2F2F2;
     cursor: pointer;
+    position: absolute;
+    left: 30%;
 }
 
 .bouton-recherche>i {
@@ -247,11 +249,14 @@ main {
     flex-direction: column;
     box-shadow: 2px 5px 8px grey
 }
-
+.logements>a {
+    position: relative;
+    height: 100%;
+}
 .images-logements {
     display: flex;
     width: 100%;
-    height: 110px;
+    height: 130px;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -264,6 +269,7 @@ main {
 }
 
 .body-logements {
+    height: 90px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -280,19 +286,21 @@ main {
 
 .body-logements>h3 {
     margin-top: 10px;
-    margin-bottom: 2px;
 }
 
 .body-logements>p {
     margin-top: 5px;
-    margin-bottom: 15px;
     font-size: medium;
 }
 
 .notation-etoile {
     display: flex;
     justify-content: flex-start;
+    justify-self: flex-end;
     color: #0065FC;
+    position: absolute;
+    bottom: 10px;
+
 }
 
 #hebergements>p {

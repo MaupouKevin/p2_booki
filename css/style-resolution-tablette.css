@@ -4,6 +4,13 @@ footer {
     padding-left: 25px;
     padding-right: 25px;
 }
+
+#barre-recherche {
+    width: 40%;
+}
+.bouton-recherche {
+    left: 40%;
+}
     
 #hebergements-populaires {
     flex-direction: column;

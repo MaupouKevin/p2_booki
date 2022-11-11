@@ -57,7 +57,7 @@ h3 {
 }
 
 #barre-recherche {
-    width: auto;
+    width: 80%;
     height: 50px;
 }
 
@@ -68,6 +68,7 @@ input[type=search] {
 
 .bouton-recherche {
     border-radius: 15px;
+    left: 80%;
 }
 
 .bouton-recherche>span {
